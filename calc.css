@@ -15,34 +15,33 @@ body {
   background: rgba(51, 51, 51, 0.1);
   border-radius: 6px;
   margin: 20px;
+  overflow: hidden;
 }
 
 .calcFrame {
-  display: inline-block;
-  padding: 10px;
   border-radius: 4px;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  margin: 0 auto;
 }
 
 .calcScreen {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  float: left;
+  width: 250px;
+  height: 75px;
   border: 1px solid white padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .calcResult {
-  font-size: 60px;
+  font-size: 30px;
   color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 10px;
 }
 
 .calcInput {
-  font-size: 50px;
+  font-size: 20px;
   color: white;
+  margin: 10px;
 }
 
 button {
@@ -58,24 +57,15 @@ button {
   text-align: centre;
 }
 
-@media only screen and (max-width: 375px) {
-  .calcScreen {
-    height: 75px;
-    width: 250px;
-  }
-  .calcResult {
-    font-size: 25px;
-    margin: 0;
-    padding-left: 20px;
-  }
+footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.calcInput {
-  font-size: 20px;
-  text-align: centre;
-  margin: 10px 0px;
-  padding-left: 20px;
-}
-
-
+footer a img {
+  height: 20px;
+  width: 100%;
 }

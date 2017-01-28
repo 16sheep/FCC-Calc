@@ -7,7 +7,7 @@ $("button").click(function () {
   if (curId == "ac") {
     getById("result").innerHTML = ""
     getById("input").innerHTML = ""
-    finalRes = 0
+    finalRes = ""
   } else if (curId == "ce") {
     finalRes = finalRes.slice(0, -1)
     getById("result").innerHTML = finalRes.charAt(finalRes.length - 1)
@@ -17,10 +17,12 @@ $("button").click(function () {
       getById("result").innerHTML += curHTML
       getById("input").innerHTML += curHTML + ")"
       finalRes += curHTML + ")"
+      console.log(finalRes)
     } else {
       getById("result").innerHTML += curHTML
       getById("input").innerHTML += curHTML
       finalRes += curHTML
+      console.log(finalRes)
     }
   } else if (opArr.indexOf(getById(curId).innerHTML) > -1) {
     getById("result").innerHTML = curHTML
