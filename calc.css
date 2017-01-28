@@ -1,0 +1,81 @@
+body {
+  background: red;
+  background: -webkit-linear-gradient(left top, red, yellow) fixed;
+  background: -o-linear-gradient(bottom right, red, yellow) fixed;
+  background: -moz-linear-gradient(bottom right, red, yellow)fixed;
+  background: linear-gradient(to bottom right, red, yellow) fixed;
+}
+
+.cont {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: rgba(51, 51, 51, 0.1);
+  border-radius: 6px;
+  margin: 20px;
+}
+
+.calcFrame {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  width: 300px;
+  height: 300px;
+}
+
+.calcScreen {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  float: left;
+  border: 1px solid white padding: 10px;
+}
+
+.calcResult {
+  font-size: 60px;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.calcInput {
+  font-size: 50px;
+  color: white;
+}
+
+button {
+  background: transparent;
+  border: none;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  margin: 2px;
+  width: 55px;
+  height: 55px;
+  text-align: centre;
+}
+
+@media only screen and (max-width: 375px) {
+  .calcScreen {
+    height: 75px;
+    width: 250px;
+  }
+  .calcResult {
+    font-size: 25px;
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+.calcInput {
+  font-size: 20px;
+  text-align: centre;
+  margin: 10px 0px;
+  padding-left: 20px;
+}
+
+
+}
